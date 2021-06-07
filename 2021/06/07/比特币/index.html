@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+  <title>比特币 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"wengdiquan.github.io","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>你看我挂在东南枝上</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="比特币">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-06-07 15:56" pubdate>
+        2021年6月7日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">比特币</h1>
+            
+            <div class="markdown-body">
+              <h1 id="区块链"><a href="#区块链" class="headerlink" title="区块链"></a>区块链</h1><h2 id="比特币"><a href="#比特币" class="headerlink" title="比特币"></a>比特币</h2><h3 id="什么是比特币"><a href="#什么是比特币" class="headerlink" title="什么是比特币"></a>什么是比特币</h3><p>2008年11月1日，一个署名为「中本聪」的人在论坛上发表了一片名为<a target="_blank" rel="noopener" href="https://bitcoin.org/bitcoin.pdf">《比特币：点对点电子现金系统》</a>的论文，文中介绍了其对电子货币的最新构想，即如何使用点对点网络来创造一种<strong>不需要依赖任何第三方信任机构</strong>的电子交易系统。2009年1月，比特币上线。</p>
+<p>比特币是一种完全 <strong>去中心化</strong>的数字<strong>货币</strong>。</p>
+<h4 id="货币"><a href="#货币" class="headerlink" title="货币"></a>货币</h4><p>货币，又称金钱，简称钱，是为了提交交易效率而用于交换的中介商品。经济学上认为，货币的本质就是一般等价物。</p>
+<p>人们在不同经济环境中，可能在不同的媒介商品上达成共识。可以是贵金属乃至于一般金属，也可以是有价值的民生必需品，例如，战国时期楚国的泥质金饼，罗马帝国的军中食盐，现在美国监狱中的香烟货币。</p>
+<p>总的来说，货币的本质就是一种在流通过程中，各方都认可的一般等价物，是所有者之间的约定。只要你创造出一种东西，它满足充当一般等价物的条件，那么你就是创造了一种货币。</p>
+<h4 id="去中心化"><a href="#去中心化" class="headerlink" title="去中心化"></a>去中心化</h4><p>一直以来，数字世界中的货币有三种形式</p>
+<ul>
+<li>中心化的在线支付：在这些支付系统中流转的是映射到物理世界的各国的法定货币（也称法币）;</li>
+<li>中心化的计算机点数或互联网积分：它还有一个更为大众所熟知的名字–虚拟货币。通常，它不与物理世界的法币对应，而是由商业公司中心化发行，仅可以再一家公司的体系中使用。</li>
+<li>去中心化的电子现金</li>
+</ul>
+<p><img src="https://gitee.com/wengdiquan/md/raw/master/img/20210526231544.png" srcset="/img/loading.gif" lazyload></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>物理世界中的现金</th>
+<th>中心化的电子现金</th>
+<th>中心化的计算机点数</th>
+<th>去中心化的电子现金</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>发行</td>
+<td>中心化</td>
+<td>中心化</td>
+<td>中心化</td>
+<td>去中心化</td>
+</tr>
+<tr>
+<td>交易</td>
+<td>去中心化</td>
+<td>中心化</td>
+<td>中心化</td>
+<td>去中心化</td>
+</tr>
+</tbody></table>
+<h5 id="比特币是如何实现去中心化的？"><a href="#比特币是如何实现去中心化的？" class="headerlink" title="比特币是如何实现去中心化的？"></a>比特币是如何实现去中心化的？</h5><p>我们可以发现，在早期的社会中，人们都是采用最直接的物物交换，也就是具有实际价值的东西之间进行交换，但是物物交换的效率太低，而且不同货物之间的价值和兑换比例也无法有效衡量，所以在后来随着类似于秦国这样中央集权政府的出现和巩固后，统一了货币，一直到现代社会的没有内含价值的货币。</p>
+<p>现在的货币本身是没有价值的，而我们之所以愿意使用纸币，是基于对<strong>主体</strong>的信任，主体也就是各类政权和中央银行体系。中央政府保证了它是有价值的，我们可以用它来交换货物，于是我们信任他。</p>
+<p>而比特币打破了古今中外的惯例，它是去中心化的，它不需要依赖任何类似于中央政府和中央银行之类的机构信用背书就可以发行货币。</p>
+<p>在没有可信任的第三方之后，最大的问题就是我们每一个人都无法相互信任，所以在比特币这个体系中，转账就得发广播，目的是让每个人都知道网络里每一个人每一笔钱的来龙去脉，每一个节点都会通过电子签名验证交易的正确性和真实性。</p>
+<p>在比特币体系中，每个节点都都拥有相同且实时更新的<strong>账本</strong>，而这个账本是由一系列头尾相连的区块连接组成，也就是我们现在经常听到的<strong>区块链</strong>。这个账本以区块为单位来进行记账，每个区块上又记录着不同数量的交易，每一笔交易都会在账本上得到体现。包括每个人账户上的所有比特币从哪里来，花到了哪里都记录得清清楚楚且透明公开。那么比特币是如何不依赖第三方进行发现的呢？ 谁来负责记账？又怎么保证这个账本的可靠性呢？</p>
+<h5 id="共识机制"><a href="#共识机制" class="headerlink" title="共识机制"></a>共识机制</h5><p>遍布全球的比特币网络各自独立工作，随时有节点退出或者加入，怎么保证最终大家记录的账本一致？</p>
+<p>谁来负责记账？ 如果每个人都能记账，那每个人的账本中记录的交易顺序都有可能不一样，这样就不是统一的账本了。中本聪给的方案是做题，谁先把答案算出来，谁就有记账的权利，这个机制被称作工作量证明（POW）。而这个过程被称作挖矿。挖矿过程其实是矿工争取创建一个区块的过程，一旦挖到矿，也就代表这个矿工有资格创建新区块。怎么算挖到矿呢？通过一系列复杂的加密算法，从0开始到∞，找到一个满足难度的hash值，得到这个值，就是挖到矿。这个算法过程被称为“共识机制”，也就是通过什么形式来决定谁拥有记账权。</p>
+<p><a target="_blank" rel="noopener" href="https://www.blockchain.com/btc/block/0000000000000000000788fba958743370b8ea568963b90214610b151270d74f?page=7">第6855666个区块的信息</a></p>
+<p>先来看看账本长什么样：<img src="https://gitee.com/wengdiquan/md/raw/master/img/20210601162719.png" srcset="/img/loading.gif" lazyload></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hash</td>
+<td>区块头hash值</td>
+</tr>
+<tr>
+<td>preHash</td>
+<td>为了防止账本被篡改，每一个区块头里都会记录着上一个区块的hash值，如果修改任何一个区块里的任何一个内容，都会改变这个区块的hash值从而导致指向这个区块的hash指针失效，所以你又必须修改下一个区块的hash指针，同时这又会影响下个区块的hash值。。。直到重新计算并修改完这个区块后的所有区块。</td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>时间戳，代表创建区块的时间</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>高度，区块序号</td>
+</tr>
+<tr>
+<td>Miner</td>
+<td>矿工</td>
+</tr>
+<tr>
+<td>Number of Transactions</td>
+<td>区块包含的交易数量</td>
+</tr>
+<tr>
+<td>Transaction Volume</td>
+<td>区块内的交易额</td>
+</tr>
+<tr>
+<td>Block Reward</td>
+<td>区块奖励，创世区块奖励50个比特币，之后每4年减少一半，现在是6.25个比特币</td>
+</tr>
+<tr>
+<td>Fee Reward</td>
+<td>记账奖励</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>难度，是一个相对值，是由中本聪人为设定的，刚开始时平均需要计算4295032833次，以这个难度为1，截至目前，难度系数已经达到21,047,730,572,451（详见<a target="_blank" rel="noopener" href="https://btc.com/stats/diff%EF%BC%89%EF%BC%8C%E5%81%87%E5%A6%82%E7%94%B5%E8%84%91%E6%AF%8F%E7%A7%92%E8%83%BD%E8%AE%A1%E7%AE%9710%E4%BA%BF%E6%AC%A1%EF%BC%8C%E9%82%A3%E5%B9%B3%E5%9D%87%E9%9C%80%E8%A6%8143*10^8">https://btc.com/stats/diff），假如电脑每秒能计算10亿次，那平均需要43*10^8</a> * 21*10^12 / 3600 /24 / 365 / 10^9 = 286万年</td>
+</tr>
+<tr>
+<td>Nonce</td>
+<td>随机数，通过修改这个值，使整个区块头的hash值符合目标值</td>
+</tr>
+<tr>
+<td>Merkle root</td>
+<td>所有交易排序合并计算后得到的一个值，任何一笔交易的内容发生变更都会使这个值发生变化<img src="https://gitee.com/wengdiquan/md/raw/master/img/20210601171544.png" srcset="/img/loading.gif" lazyload></td>
+</tr>
+<tr>
+<td>Block Transactions</td>
+<td>交易列表</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>区块的组成：</p>
+<p><img src="https://gitee.com/wengdiquan/md/raw/master/img/20210601105611.png" srcset="/img/loading.gif" lazyload></p>
+<p>把区块头做2次SHA256运算，就能得到这个区块的hash值，想要记账，就要把区块里的各种信息打包后，然后修改区块头里的随机数， 让区块头在hash运算之后能够得到一个前N位都是0的hash值。那么输入一个随机值，得到正确结果的概率就是1/2^n，比特币会自动调节这个难度，使得每次成功打包区块的时间都能够保持在10分钟左右，今天比特币网络里难度大概是9.03*10^22，如果确认正确后，大家就会把这个区块链接到区块链上，开始打包计算下一个区块。而第一个完成区块打包的节点会获得系统奖励，最开始是50个比特币，每过4年奖励减半，现在是6.25个比特币，差不多等于227,793.81 美元。这个过程被形象地称作挖矿，也就是比特币的发行过程。</p>
+<h3 id="比特币的行情"><a href="#比特币的行情" class="headerlink" title="比特币的行情"></a>比特币的行情</h3><p><a target="_blank" rel="noopener" href="https://www.blockchain.com/prices/BTC">价格变化趋势</a></p>
+<p><img src="https://gitee.com/wengdiquan/md/raw/master/img/20210601112426.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="挖矿的过程"><a href="#挖矿的过程" class="headerlink" title="挖矿的过程"></a>挖矿的过程</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs abnf"><span class="hljs-number">1</span>. 节点收集<span class="hljs-number">10</span>分钟内全网有效的交易信息<span class="hljs-comment">;</span><br><span class="hljs-number">2</span>. 插入一笔包含交易费和系统奖励的交易信息<span class="hljs-comment">;</span><br><span class="hljs-number">3</span>. 将交易列表排好顺序，计算出Merkle Root写入区块头<span class="hljs-comment">;</span><br><span class="hljs-number">4</span>. 找到上一个区块，并计算出它的区块头哈希值写入区块头<span class="hljs-comment">;</span><br><span class="hljs-number">5</span>. 获取当前难度目标值<span class="hljs-comment">;</span><br><span class="hljs-number">6</span>. 不断调整随机数，使得区块头的哈希值满足要求<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
+<p>所以挖矿的本质就是记录交易，并构造出一个满足条件的区块。  如果币被挖完了呢？</p>
+<h2 id="区块链-1"><a href="#区块链-1" class="headerlink" title="区块链"></a>区块链</h2><blockquote>
+<p>比特币不谈技术的都是韭菜</p>
+</blockquote>
+<p>谈区块链最好先抛开各种币的价格，价格这种事你懂的，贵和便宜根本不是人能控制的。但是基于区块链技术去做项目，却是实实在在可以可持续发展。所以，了解区块链技术比炒币来的实在。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
